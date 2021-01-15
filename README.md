@@ -1,1 +1,13 @@
 # stash_codingchallenge
+
+Hello, this is my implementation of Achievements List. I followed the pattern given in the [Mindorks blog](https://blog.mindorks.com/building-ios-app-with-viper-architecture-8109acc72227). I would like to note that since this was only one screen example, there was no need to implement any router functionality but I do appreciate that Routing is responsible for navigation across the app.
+
+I also added RxSwift between the layer of Presenter and View just to see if it also makes sense to mix-in reactive programming elements with VIPER. Obviously, using Rx is purely optional and one can always use the "delegate" pattern to communicate between different layers.
+
+You will notice that I added a DependencyFactory to provide dependencies and inject them into each component. I would like to note that there are several dependency injection frameworks out there for Swift. One could use those or could manually provide the dependencies as I have done in this demo project or don't use any dependency injection at all. It is again optional. However, over the years, I have found out that using dependency injection of some kind encourages modular programming.
+
+I provided 2 test cases to demonstrate how one can write unit tests in this demo project.
+
+I tried to keep it simple and straightforward. Hopefully it all makes sense.
+
+Thanks for reviewing the code challenge

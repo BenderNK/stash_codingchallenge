@@ -17,21 +17,6 @@ class MockDependencyFactory {
         return DispatchQueue(label: "test.networkqueue")
     }
     
-    /*
-     class func provideAchievementInteractor() -> AchievementsInteractorInputProtocol {
-         return MockAchievementsInteractor(achievementsLocalDataManager: provideAchievementsLocalDataManager(),
-                                      achievementsRemoteDataManager: provideAchievementsRemoteDataManager())
-     }
-     
-     class func provideAchivementsPresenter() -> AchievementsPresenterProtocol {
-         return AchievementsPresenter(interactor: provideAchievementInteractor())
-     }
-     */
-    
-    class func provideAchievementsLocalDataManager() -> AchievementsLocalDataManagerProtocol {
-        return MockAchievementsLocalDataManager(ioQueue: MockDependencyFactory.provideIOQueue())
-    }
-    
     class func provideAchievementsRemoteDataManager() -> AchievementsRemoteDataManagerProtocol {
         return AchievementsRemoteDataManager(networkQueue: provideNetworkQueue())
     }

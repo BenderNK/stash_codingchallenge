@@ -20,7 +20,6 @@
 		B26ECCCC25B153C0005FCD32 /* MockRemoteDataFetched.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26ECCCB25B153C0005FCD32 /* MockRemoteDataFetched.swift */; };
 		B29A168F25AFEF8A0023F222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A168E25AFEF8A0023F222 /* AppDelegate.swift */; };
 		B29A169125AFEF8A0023F222 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A169025AFEF8A0023F222 /* SceneDelegate.swift */; };
-		B29A169325AFEF8A0023F222 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A169225AFEF8A0023F222 /* ViewController.swift */; };
 		B29A169625AFEF8A0023F222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29A169425AFEF8A0023F222 /* Main.storyboard */; };
 		B29A169825AFEF8B0023F222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29A169725AFEF8B0023F222 /* Assets.xcassets */; };
 		B29A169B25AFEF8B0023F222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29A169925AFEF8B0023F222 /* LaunchScreen.storyboard */; };
@@ -77,7 +76,6 @@
 		B29A168B25AFEF8A0023F222 /* coach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29A168E25AFEF8A0023F222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B29A169025AFEF8A0023F222 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B29A169225AFEF8A0023F222 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B29A169525AFEF8A0023F222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B29A169725AFEF8B0023F222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B29A169A25AFEF8B0023F222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -192,7 +190,6 @@
 				B29A16CA25AFF0FB0023F222 /* modules */,
 				B29A168E25AFEF8A0023F222 /* AppDelegate.swift */,
 				B29A169025AFEF8A0023F222 /* SceneDelegate.swift */,
-				B29A169225AFEF8A0023F222 /* ViewController.swift */,
 				B29A169425AFEF8A0023F222 /* Main.storyboard */,
 				B29A169725AFEF8B0023F222 /* Assets.xcassets */,
 				B29A169925AFEF8B0023F222 /* LaunchScreen.storyboard */,
@@ -510,7 +507,6 @@
 				B29A16E525AFF4020023F222 /* AchievementsLocalDataManager.swift in Sources */,
 				B2494CE425B0FCE800327445 /* AchievementsRemoteDataManager.swift in Sources */,
 				B29A16DC25AFF2180023F222 /* Achievement.swift in Sources */,
-				B29A169325AFEF8A0023F222 /* ViewController.swift in Sources */,
 				B29A16F625AFF95E0023F222 /* AchievementInteractor.swift in Sources */,
 				B2494D0025B13CEB00327445 /* NibLoadable.swift in Sources */,
 				B2494CE925B1052D00327445 /* ErrorMessageComponents.swift in Sources */,
@@ -708,6 +704,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6EUWQK393X;
 				INFOPLIST_FILE = coach/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -728,6 +725,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6EUWQK393X;
 				INFOPLIST_FILE = coach/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
