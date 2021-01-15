@@ -4,10 +4,15 @@ Hello, this is my implementation of Achievements List. I followed the pattern gi
 
 I also added RxSwift between the layer of Presenter and View just to see if it also makes sense to mix-in reactive programming elements with VIPER. Obviously, using Rx is purely optional and one can always use the "delegate" pattern to communicate between different layers.
 
-You will notice that I added a DependencyFactory to provide dependencies and inject them into each component. I would like to note that there are several dependency injection frameworks out there for Swift. One could use those or could manually provide the dependencies as I have done in this demo project or don't use any dependency injection at all. It is again optional. However, over the years, I have found out that using dependency injection of some kind encourages modular programming.
+You will notice that I added a DependencyFactory to provide dependencies and inject them into each component. I would like to note that there are several dependency injection frameworks out there for Swift. Dependency injection is an optional pattern to follow. Instead of using a 3rd party tool, I just manually created a Dependency Provider using the Factory pattern. However, over the years, I have found out that using dependency injection of some kind encourages modular programming and it looks like it might go well together with VIPER since it also encourages similar programming patterns.
 
 I provided 2 test cases to demonstrate how one can write unit tests in this demo project.
 
 I tried to keep it simple and straightforward. Hopefully it all makes sense.
 
-Thanks for reviewing the code challenge
+Thanks for reviewing the code challenge!
+
+### Requirements to run
+XCode 12.3
+Cocoapods 1.10 (earlier versions might also work)
+iOS 14 emulator
