@@ -22,6 +22,7 @@
 		B27A57DD25B1672500C3D1AD /* MockAchievementsLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A57DC25B1672500C3D1AD /* MockAchievementsLocalDataManager.swift */; };
 		B27A57E225B1680300C3D1AD /* MockAchievementsRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A57E125B1680300C3D1AD /* MockAchievementsRemoteDataManager.swift */; };
 		B27A57E725B1E5C600C3D1AD /* MockAchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A57E625B1E5C600C3D1AD /* MockAchievementsPresenter.swift */; };
+		B27A57F025B1E9ED00C3D1AD /* AchievementsWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A57EF25B1E9ED00C3D1AD /* AchievementsWireFrame.swift */; };
 		B29A168F25AFEF8A0023F222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A168E25AFEF8A0023F222 /* AppDelegate.swift */; };
 		B29A169125AFEF8A0023F222 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A169025AFEF8A0023F222 /* SceneDelegate.swift */; };
 		B29A169625AFEF8A0023F222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29A169425AFEF8A0023F222 /* Main.storyboard */; };
@@ -81,6 +82,7 @@
 		B27A57DC25B1672500C3D1AD /* MockAchievementsLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAchievementsLocalDataManager.swift; sourceTree = "<group>"; };
 		B27A57E125B1680300C3D1AD /* MockAchievementsRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAchievementsRemoteDataManager.swift; sourceTree = "<group>"; };
 		B27A57E625B1E5C600C3D1AD /* MockAchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAchievementsPresenter.swift; sourceTree = "<group>"; };
+		B27A57EF25B1E9ED00C3D1AD /* AchievementsWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsWireFrame.swift; sourceTree = "<group>"; };
 		B29A168B25AFEF8A0023F222 /* coach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29A168E25AFEF8A0023F222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B29A169025AFEF8A0023F222 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +192,14 @@
 			path = achievement;
 			sourceTree = "<group>";
 		};
+		B27A57EE25B1E9C800C3D1AD /* wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				B27A57EF25B1E9ED00C3D1AD /* AchievementsWireFrame.swift */,
+			);
+			path = wireframe;
+			sourceTree = "<group>";
+		};
 		B29A168225AFEF8A0023F222 = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +267,7 @@
 		B29A16CB25AFF1030023F222 /* achievements */ = {
 			isa = PBXGroup;
 			children = (
+				B27A57EE25B1E9C800C3D1AD /* wireframe */,
 				B2F653F325B0D13200941C04 /* protocols */,
 				B29A170D25AFFC760023F222 /* view */,
 				B29A170225AFFC190023F222 /* presenter */,
@@ -539,6 +550,7 @@
 				B2494D0025B13CEB00327445 /* NibLoadable.swift in Sources */,
 				B2494CE925B1052D00327445 /* ErrorMessageComponents.swift in Sources */,
 				B29A172925B0043C0023F222 /* UIView+Extensions.swift in Sources */,
+				B27A57F025B1E9ED00C3D1AD /* AchievementsWireFrame.swift in Sources */,
 				B29A168F25AFEF8A0023F222 /* AppDelegate.swift in Sources */,
 				B2F653EF25B0CC3800941C04 /* String+Extensions.swift in Sources */,
 				B2F653FD25B0D45900941C04 /* DependencyFactory.swift in Sources */,

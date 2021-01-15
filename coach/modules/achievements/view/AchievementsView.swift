@@ -13,7 +13,8 @@ class AchievementsView: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
 
-    private lazy var achievementsPresenter = DependencyFactory.provideAchivementsPresenter()
+    var achievementsPresenter: AchievementsPresenterProtocol?
+    
     private let disposeBag = DisposeBag()
     private var achievements = [AchievementModel]()
     
@@ -24,12 +25,12 @@ class AchievementsView: UIViewController {
         configureRxBindings() //setup Rx piping
         configureNavbar() //navigation bar configuration
         
-        achievementsPresenter.viewDidLoad()
+        achievementsPresenter?.viewDidLoad()
     }
     
     private func configureRxBindings() {
         //controls to show or hide loading indicator
-        achievementsPresenter.shouldShowLoadingIndicator
+        achievementsPresenter?.shouldShowLoadingIndicator
         .observe(on: MainScheduler.asyncInstance)
         .subscribe(onNext: { [weak self] shouldShow in
             self?.tableView.isHidden = shouldShow
@@ -37,7 +38,7 @@ class AchievementsView: UIViewController {
         }).disposed(by: disposeBag)
         
         //displays error messages when necessary
-        achievementsPresenter.displayError
+        achievementsPresenter?.displayError
         .observe(on: MainScheduler.asyncInstance)
         .subscribe(onNext: { [weak self] errorInfo in
             let alertController = UIAlertController(title: errorInfo.title,
@@ -49,7 +50,7 @@ class AchievementsView: UIViewController {
             self?.present(alertController, animated: true, completion: nil)
         }).disposed(by: disposeBag)
         
-        achievementsPresenter.displayAchievements
+        achievementsPresenter?.displayAchievements
         .observe(on: MainScheduler.asyncInstance)
         .subscribe(onNext: { [weak self] achievements in
             self?.achievements = achievements

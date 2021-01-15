@@ -33,7 +33,9 @@ class MockDependencyFactory {
         return MockAchievementsRemoteDataManager(networkQueue: provideNetworkQueue())
     }
     
+    
     class func provideAchievementsPresenter() -> MockAchievementsPresenter {
-        return MockAchievementsPresenter(interactor: provideinter)
+        return MockAchievementsPresenter()
     }
+    
 }

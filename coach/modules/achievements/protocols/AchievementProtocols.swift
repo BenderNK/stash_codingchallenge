@@ -61,8 +61,8 @@ protocol AchievementsInteractorInputProtocol: LocalDataFetchedProtocol, RemoteDa
 }
 
 
-protocol AchievementsPresenterProtocol {
-    var interactor: AchievementsInteractorInputProtocol { get }
+protocol AchievementsPresenterProtocol: AchievementsInteractorOutputProtocol {
+    var interactor: AchievementsInteractorInputProtocol? { get set }
     var shouldShowLoadingIndicator: Observable<Bool> { get }
     var displayError: Observable<ErrorMessageComponents> { get }
     var displayAchievements: Observable<[AchievementModel]> { get }

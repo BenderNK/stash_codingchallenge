@@ -18,11 +18,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        let achievementView = AchievementsView()
-        let navController = UINavigationController(rootViewController: achievementView)
         self.window = UIWindow(windowScene: windowScene)
         self.window?.makeKeyAndVisible()
-        self.window?.rootViewController = navController
+        self.window?.rootViewController = AchievementsWireFrame.createAchievementsVC()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

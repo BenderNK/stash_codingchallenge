@@ -30,6 +30,6 @@ class DependencyFactory {
     }
     
     class func provideAchivementsPresenter() -> AchievementsPresenterProtocol {
-        return AchievementsPresenter(interactor: provideAchievementInteractor())
+        return AchievementsPresenter()
     }
 }
