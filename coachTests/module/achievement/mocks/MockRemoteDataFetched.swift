@@ -5,7 +5,6 @@
 //  Created by Turker Nessa Kucuk on 1/14/21.
 //
 
-import Foundation
 import XCTest
 @testable import coach
 

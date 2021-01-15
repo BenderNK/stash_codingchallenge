@@ -25,7 +25,7 @@ class DependencyFactory {
     }
     
     class func provideAchievementInteractor() -> AchievementsInteractorInputProtocol {
-        return AchievementInteractor(achievementsLocalDataManager: provideAchievementsLocalDataManager(),
+        return AchievementsInteractor(achievementsLocalDataManager: provideAchievementsLocalDataManager(),
                                      achievementsRemoteDataManager: provideAchievementsRemoteDataManager())
     }
     

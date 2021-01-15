@@ -7,7 +7,7 @@
 
 import Foundation
 
-class AchievementInteractor: AchievementsInteractorInputProtocol {
+class AchievementsInteractor: AchievementsInteractorInputProtocol {
     let achievementsLocalDataManager: AchievementsLocalDataManagerProtocol
     let achievementsRemoteDataManager: AchievementsRemoteDataManagerProtocol
     
@@ -28,9 +28,7 @@ class AchievementInteractor: AchievementsInteractorInputProtocol {
         //to retrieve the data over http
         achievementsLocalDataManager.fetchAchievements()
     }
-}
-
-extension AchievementInteractor: LocalDataFetchedProtocol {
+    
     func didFetchAchievementsFromCache(_ achievements: [Achievement]) {
         if achievements.isEmpty {
             //there is no data in the cache - ask the remote manager to retrieve the items over http
@@ -45,9 +43,7 @@ extension AchievementInteractor: LocalDataFetchedProtocol {
     func didCacheAchievements() {
         print("hip hip hooray. from now on, we can directly get the data from the local cache!!!")
     }
-}
-
-extension AchievementInteractor: RemoteDataFetchedProtocol {
+    
     func didFetchAchievementsFromRemote(_ achievements: [Achievement]) {
         //since we just received a fresh copy of the data from remote, save them locally for re-use
         achievementsLocalDataManager.saveAchievements(achievements)

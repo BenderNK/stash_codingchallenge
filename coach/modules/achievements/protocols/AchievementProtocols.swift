@@ -48,7 +48,7 @@ protocol AchievementsInteractorOutputProtocol: class {
     func didFailFetchingAchievements(error: StashError)
 }
 
-protocol AchievementsInteractorInputProtocol: class {
+protocol AchievementsInteractorInputProtocol: LocalDataFetchedProtocol, RemoteDataFetchedProtocol {
     init(achievementsLocalDataManager: AchievementsLocalDataManagerProtocol,
          achievementsRemoteDataManager: AchievementsRemoteDataManagerProtocol)
     

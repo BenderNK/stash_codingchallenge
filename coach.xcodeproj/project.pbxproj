@@ -18,6 +18,10 @@
 		B2494D2825B14BDF00327445 /* MockLocalDataFetched.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2494D2725B14BDF00327445 /* MockLocalDataFetched.swift */; };
 		B26ECCC725B15367005FCD32 /* AchievementsRemoteDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26ECCC625B15367005FCD32 /* AchievementsRemoteDataManagerTests.swift */; };
 		B26ECCCC25B153C0005FCD32 /* MockRemoteDataFetched.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26ECCCB25B153C0005FCD32 /* MockRemoteDataFetched.swift */; };
+		B27A57CA25B165ED00C3D1AD /* AchievementsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A57C925B165ED00C3D1AD /* AchievementsInteractorTests.swift */; };
+		B27A57DD25B1672500C3D1AD /* MockAchievementsLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A57DC25B1672500C3D1AD /* MockAchievementsLocalDataManager.swift */; };
+		B27A57E225B1680300C3D1AD /* MockAchievementsRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A57E125B1680300C3D1AD /* MockAchievementsRemoteDataManager.swift */; };
+		B27A57E725B1E5C600C3D1AD /* MockAchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A57E625B1E5C600C3D1AD /* MockAchievementsPresenter.swift */; };
 		B29A168F25AFEF8A0023F222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A168E25AFEF8A0023F222 /* AppDelegate.swift */; };
 		B29A169125AFEF8A0023F222 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A169025AFEF8A0023F222 /* SceneDelegate.swift */; };
 		B29A169625AFEF8A0023F222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29A169425AFEF8A0023F222 /* Main.storyboard */; };
@@ -28,7 +32,7 @@
 		B29A16DC25AFF2180023F222 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A16DB25AFF2180023F222 /* Achievement.swift */; };
 		B29A16E525AFF4020023F222 /* AchievementsLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A16E425AFF4020023F222 /* AchievementsLocalDataManager.swift */; };
 		B29A16F025AFF5730023F222 /* AchievementsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A16EF25AFF5730023F222 /* AchievementsResponse.swift */; };
-		B29A16F625AFF95E0023F222 /* AchievementInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A16F525AFF95D0023F222 /* AchievementInteractor.swift */; };
+		B29A16F625AFF95E0023F222 /* AchievementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A16F525AFF95D0023F222 /* AchievementsInteractor.swift */; };
 		B29A16FE25AFFC120023F222 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A16FD25AFFC120023F222 /* AchievementsPresenter.swift */; };
 		B29A171325AFFCBA0023F222 /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A171125AFFCBA0023F222 /* AchievementsView.swift */; };
 		B29A171425AFFCBA0023F222 /* AchievementsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29A171225AFFCBA0023F222 /* AchievementsView.xib */; };
@@ -73,6 +77,10 @@
 		B2494D2725B14BDF00327445 /* MockLocalDataFetched.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocalDataFetched.swift; sourceTree = "<group>"; };
 		B26ECCC625B15367005FCD32 /* AchievementsRemoteDataManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsRemoteDataManagerTests.swift; sourceTree = "<group>"; };
 		B26ECCCB25B153C0005FCD32 /* MockRemoteDataFetched.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockRemoteDataFetched.swift; sourceTree = "<group>"; };
+		B27A57C925B165ED00C3D1AD /* AchievementsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractorTests.swift; sourceTree = "<group>"; };
+		B27A57DC25B1672500C3D1AD /* MockAchievementsLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAchievementsLocalDataManager.swift; sourceTree = "<group>"; };
+		B27A57E125B1680300C3D1AD /* MockAchievementsRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAchievementsRemoteDataManager.swift; sourceTree = "<group>"; };
+		B27A57E625B1E5C600C3D1AD /* MockAchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAchievementsPresenter.swift; sourceTree = "<group>"; };
 		B29A168B25AFEF8A0023F222 /* coach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29A168E25AFEF8A0023F222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B29A169025AFEF8A0023F222 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +97,7 @@
 		B29A16DB25AFF2180023F222 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
 		B29A16E425AFF4020023F222 /* AchievementsLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsLocalDataManager.swift; sourceTree = "<group>"; };
 		B29A16EF25AFF5730023F222 /* AchievementsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsResponse.swift; sourceTree = "<group>"; };
-		B29A16F525AFF95D0023F222 /* AchievementInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementInteractor.swift; sourceTree = "<group>"; };
+		B29A16F525AFF95D0023F222 /* AchievementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractor.swift; sourceTree = "<group>"; };
 		B29A16FD25AFFC120023F222 /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
 		B29A171125AFFCBA0023F222 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
 		B29A171225AFFCBA0023F222 /* AchievementsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementsView.xib; sourceTree = "<group>"; };
@@ -156,8 +164,30 @@
 				B2494D1F25B1499800327445 /* MockAchievementsInteractor.swift */,
 				B2494D2725B14BDF00327445 /* MockLocalDataFetched.swift */,
 				B26ECCCB25B153C0005FCD32 /* MockRemoteDataFetched.swift */,
+				B27A57DC25B1672500C3D1AD /* MockAchievementsLocalDataManager.swift */,
+				B27A57E125B1680300C3D1AD /* MockAchievementsRemoteDataManager.swift */,
+				B27A57E625B1E5C600C3D1AD /* MockAchievementsPresenter.swift */,
 			);
 			path = mocks;
+			sourceTree = "<group>";
+		};
+		B27A57D125B165F600C3D1AD /* module */ = {
+			isa = PBXGroup;
+			children = (
+				B27A57D225B165FF00C3D1AD /* achievement */,
+			);
+			path = module;
+			sourceTree = "<group>";
+		};
+		B27A57D225B165FF00C3D1AD /* achievement */ = {
+			isa = PBXGroup;
+			children = (
+				B2494D0E25B1430A00327445 /* mocks */,
+				B2494D0425B1425500327445 /* AchievementsLocalDataManagerTests.swift */,
+				B26ECCC625B15367005FCD32 /* AchievementsRemoteDataManagerTests.swift */,
+				B27A57C925B165ED00C3D1AD /* AchievementsInteractorTests.swift */,
+			);
+			path = achievement;
 			sourceTree = "<group>";
 		};
 		B29A168225AFEF8A0023F222 = {
@@ -201,9 +231,7 @@
 		B29A16A425AFEF8B0023F222 /* coachTests */ = {
 			isa = PBXGroup;
 			children = (
-				B2494D0E25B1430A00327445 /* mocks */,
-				B2494D0425B1425500327445 /* AchievementsLocalDataManagerTests.swift */,
-				B26ECCC625B15367005FCD32 /* AchievementsRemoteDataManagerTests.swift */,
+				B27A57D125B165F600C3D1AD /* module */,
 				B29A16A725AFEF8B0023F222 /* Info.plist */,
 			);
 			path = coachTests;
@@ -262,7 +290,7 @@
 		B29A16F425AFF94B0023F222 /* interactor */ = {
 			isa = PBXGroup;
 			children = (
-				B29A16F525AFF95D0023F222 /* AchievementInteractor.swift */,
+				B29A16F525AFF95D0023F222 /* AchievementsInteractor.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -507,7 +535,7 @@
 				B29A16E525AFF4020023F222 /* AchievementsLocalDataManager.swift in Sources */,
 				B2494CE425B0FCE800327445 /* AchievementsRemoteDataManager.swift in Sources */,
 				B29A16DC25AFF2180023F222 /* Achievement.swift in Sources */,
-				B29A16F625AFF95E0023F222 /* AchievementInteractor.swift in Sources */,
+				B29A16F625AFF95E0023F222 /* AchievementsInteractor.swift in Sources */,
 				B2494D0025B13CEB00327445 /* NibLoadable.swift in Sources */,
 				B2494CE925B1052D00327445 /* ErrorMessageComponents.swift in Sources */,
 				B29A172925B0043C0023F222 /* UIView+Extensions.swift in Sources */,
@@ -528,8 +556,12 @@
 			files = (
 				B2494D2025B1499800327445 /* MockAchievementsInteractor.swift in Sources */,
 				B2494D0A25B142A500327445 /* MockDependencyFactory.swift in Sources */,
+				B27A57DD25B1672500C3D1AD /* MockAchievementsLocalDataManager.swift in Sources */,
 				B2494D1825B1449600327445 /* MockAchievementProvider.swift in Sources */,
 				B26ECCCC25B153C0005FCD32 /* MockRemoteDataFetched.swift in Sources */,
+				B27A57E225B1680300C3D1AD /* MockAchievementsRemoteDataManager.swift in Sources */,
+				B27A57E725B1E5C600C3D1AD /* MockAchievementsPresenter.swift in Sources */,
+				B27A57CA25B165ED00C3D1AD /* AchievementsInteractorTests.swift in Sources */,
 				B2494D0525B1425500327445 /* AchievementsLocalDataManagerTests.swift in Sources */,
 				B2494D2825B14BDF00327445 /* MockLocalDataFetched.swift in Sources */,
 				B26ECCC725B15367005FCD32 /* AchievementsRemoteDataManagerTests.swift in Sources */,
