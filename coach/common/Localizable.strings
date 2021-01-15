@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  coach
+
+  Created by Turker Nessa on 1/13/21.
+  
+*/
+
+"error_title" = "Error";
+"ok" = "OK";
+"unrecoverable_achievement_issue" = "We encountered an unexpected issue while retrieving your achievements. Please contact support";
+"recoverable_achievement_issue" = "We encountered an issue while retrieving your achievements. The issue might be temporary. Please try again.";
+"level_title" = "Level";
+"progress_with_points" = "%1$dpts";
+"smart_investing_title" = "Smart Investing";
