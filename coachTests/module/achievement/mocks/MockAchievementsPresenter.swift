@@ -8,10 +8,12 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import XCTest
 @testable import coach
 
 class MockAchievementsPresenter: AchievementsPresenterProtocol {
-    //MARK: public properties
+    var didFetchAchievementsExpectation: XCTestExpectation?
+    
     var shouldShowLoadingIndicator: Observable<Bool> {
         return shouldShowLoadingIndicatorRelay.asObservable()
     }
@@ -26,25 +28,18 @@ class MockAchievementsPresenter: AchievementsPresenterProtocol {
     
     var interactor: AchievementsInteractorInputProtocol?
     
-    //MARK: private properties
+    
     private let shouldShowLoadingIndicatorRelay = PublishRelay<Bool>()
     private let displayErrorRelay = PublishRelay<ErrorMessageComponents>()
     private let displayAchievementsRelay = PublishRelay<[AchievementModel]>()
     
     func viewDidLoad() {
-        //view signaled that it has loaded, we should display the loading indicator
-        //shouldShowLoadingIndicatorRelay.accept(true)
-        //interactor.retrieveAchievements()
     }
 
     func didFetchAchievements(_ achievements: [AchievementModel]) {
-        //we managed to load the data, stop the loading indicator
-        //shouldShowLoadingIndicatorRelay.accept(false)
-        //displayAchievementsRelay.accept(achievements)
+        didFetchAchievementsExpectation?.fulfill()
     }
 
     func didFailFetchingAchievements(error: StashError) {
-        //shouldShowLoadingIndicatorRelay.accept(false)
-        //displayErrorRelay.accept(error.toErrorMessageComponents())
     }
 }

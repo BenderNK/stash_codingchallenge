@@ -8,3 +8,10 @@ pod 'RxSwift'
 pod 'RxCocoa'
 
 end
+
+target 'coachTests' do
+
+pod 'RxSwift'
+pod 'RxCocoa'
+
+end

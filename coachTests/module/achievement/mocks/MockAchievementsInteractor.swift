@@ -24,32 +24,30 @@ class MockAchievementsInteractor: AchievementsInteractorInputProtocol, LocalData
     var didCacheAchievementsExpectation: XCTestExpectation?
     var didFetchAchievementsFromRemoteExpectation: XCTestExpectation?
     var didFailFetchingAchievementsFromRemoteExpectation: XCTestExpectation?
+    var retrieveAchievementsExpectation: XCTestExpectation?
     
     func didFetchAchievementsFromCache(_ achievements: [Achievement]) {
-        print("I received achivement data from cache")
         didFetchAchievementsFromCacheExpectation?.fulfill()
     }
     
     func didCacheAchievements() {
-        print("somebody appears to have successfully saved data to disk.")
         didCacheAchievementsExpectation?.fulfill()
     }
-    
 
     
     func didFetchAchievementsFromRemote(_ achievements: [Achievement]) {
-        print("I received achivement data from remote")
+        presenter?.didFetchAchievements(achievements.map { AchievementModel(with: $0) })
         didFetchAchievementsFromRemoteExpectation?.fulfill()
     }
     
     func didFailFetchingAchievementsFromRemote(error: StashError) {
-        print("uh oh... something is out of order.")
+        presenter?.didFailFetchingAchievements(error: error)
         didFailFetchingAchievementsFromRemoteExpectation?.fulfill()
     }
     
     var presenter: AchievementsInteractorOutputProtocol?
     
     func retrieveAchievements() {
-        
+        retrieveAchievementsExpectation?.fulfill()
     }
 }

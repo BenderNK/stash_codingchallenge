@@ -6,7 +6,7 @@ I also added RxSwift between the layer of Presenter and View just to see if it a
 
 You will notice that I added a DependencyFactory to provide dependencies and inject them into each component. I would like to note that there are several dependency injection frameworks out there for Swift. Dependency injection is an optional pattern to follow. Instead of using a 3rd party tool, I just manually created a Dependency Provider using the Factory pattern. However, over the years, I have found out that using dependency injection of some kind encourages modular programming and it looks like it might go well together with VIPER since it also encourages similar programming patterns.
 
-I provided 2 test cases to demonstrate how one can write unit tests in this demo project.
+I provided a few test cases to demonstrate how one can write unit tests in this demo project.
 
 I tried to keep it simple and straightforward. Hopefully it all makes sense.
 

@@ -38,4 +38,9 @@ class MockDependencyFactory {
         return MockAchievementsPresenter()
     }
     
+    class func provideAchievementsInteractor() -> MockAchievementsInteractor {
+        return MockAchievementsInteractor(achievementsLocalDataManager: provideAchievementsLocalDataManager(),
+                                          achievementsRemoteDataManager: provideAchievementsRemoteDataManager())
+    }
+    
 }

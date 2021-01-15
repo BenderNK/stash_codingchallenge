@@ -16,6 +16,7 @@
 		B2494D1825B1449600327445 /* MockAchievementProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2494D1725B1449600327445 /* MockAchievementProvider.swift */; };
 		B2494D2025B1499800327445 /* MockAchievementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2494D1F25B1499800327445 /* MockAchievementsInteractor.swift */; };
 		B2494D2825B14BDF00327445 /* MockLocalDataFetched.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2494D2725B14BDF00327445 /* MockLocalDataFetched.swift */; };
+		B2494D3E25B1FC2E00327445 /* AchievementsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2494D3D25B1FC2E00327445 /* AchievementsPresenterTests.swift */; };
 		B26ECCC725B15367005FCD32 /* AchievementsRemoteDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26ECCC625B15367005FCD32 /* AchievementsRemoteDataManagerTests.swift */; };
 		B26ECCCC25B153C0005FCD32 /* MockRemoteDataFetched.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26ECCCB25B153C0005FCD32 /* MockRemoteDataFetched.swift */; };
 		B27A57CA25B165ED00C3D1AD /* AchievementsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A57C925B165ED00C3D1AD /* AchievementsInteractorTests.swift */; };
@@ -46,6 +47,7 @@
 		B2F653EF25B0CC3800941C04 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F653EE25B0CC3800941C04 /* String+Extensions.swift */; };
 		B2F653F525B0D14100941C04 /* AchievementProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F653F425B0D14100941C04 /* AchievementProtocols.swift */; };
 		B2F653FD25B0D45900941C04 /* DependencyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F653FC25B0D45900941C04 /* DependencyFactory.swift */; };
+		DBA3BDFB5B31AADC0A039EFC /* Pods_coachTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D742809735A9D6B052C158 /* Pods_coachTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,7 @@
 
 /* Begin PBXFileReference section */
 		1CAFCBC14F0CED61AE116414 /* Pods_coach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		577D0734F8167985E02452FB /* Pods-coachTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coachTests.debug.xcconfig"; path = "Target Support Files/Pods-coachTests/Pods-coachTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A70685ADB3DE88F46A31BD2 /* Pods-coach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coach.debug.xcconfig"; path = "Target Support Files/Pods-coach/Pods-coach.debug.xcconfig"; sourceTree = "<group>"; };
 		B2494CE325B0FCE800327445 /* AchievementsRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsRemoteDataManager.swift; sourceTree = "<group>"; };
 		B2494CE825B1052D00327445 /* ErrorMessageComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageComponents.swift; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 		B2494D1725B1449600327445 /* MockAchievementProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAchievementProvider.swift; sourceTree = "<group>"; };
 		B2494D1F25B1499800327445 /* MockAchievementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAchievementsInteractor.swift; sourceTree = "<group>"; };
 		B2494D2725B14BDF00327445 /* MockLocalDataFetched.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocalDataFetched.swift; sourceTree = "<group>"; };
+		B2494D3D25B1FC2E00327445 /* AchievementsPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsPresenterTests.swift; sourceTree = "<group>"; };
 		B26ECCC625B15367005FCD32 /* AchievementsRemoteDataManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsRemoteDataManagerTests.swift; sourceTree = "<group>"; };
 		B26ECCCB25B153C0005FCD32 /* MockRemoteDataFetched.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockRemoteDataFetched.swift; sourceTree = "<group>"; };
 		B27A57C925B165ED00C3D1AD /* AchievementsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractorTests.swift; sourceTree = "<group>"; };
@@ -112,7 +116,9 @@
 		B2F653EE25B0CC3800941C04 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		B2F653F425B0D14100941C04 /* AchievementProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementProtocols.swift; sourceTree = "<group>"; };
 		B2F653FC25B0D45900941C04 /* DependencyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyFactory.swift; sourceTree = "<group>"; };
+		C1D742809735A9D6B052C158 /* Pods_coachTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coachTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD44E3E76545E6C338D678E2 /* Pods-coach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coach.release.xcconfig"; path = "Target Support Files/Pods-coach/Pods-coach.release.xcconfig"; sourceTree = "<group>"; };
+		FE846EBF1DC044413C085B1A /* Pods-coachTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coachTests.release.xcconfig"; path = "Target Support Files/Pods-coachTests/Pods-coachTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA3BDFB5B31AADC0A039EFC /* Pods_coachTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +153,8 @@
 			children = (
 				6A70685ADB3DE88F46A31BD2 /* Pods-coach.debug.xcconfig */,
 				FD44E3E76545E6C338D678E2 /* Pods-coach.release.xcconfig */,
+				577D0734F8167985E02452FB /* Pods-coachTests.debug.xcconfig */,
+				FE846EBF1DC044413C085B1A /* Pods-coachTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -154,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				1CAFCBC14F0CED61AE116414 /* Pods_coach.framework */,
+				C1D742809735A9D6B052C158 /* Pods_coachTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -188,6 +198,7 @@
 				B2494D0425B1425500327445 /* AchievementsLocalDataManagerTests.swift */,
 				B26ECCC625B15367005FCD32 /* AchievementsRemoteDataManagerTests.swift */,
 				B27A57C925B165ED00C3D1AD /* AchievementsInteractorTests.swift */,
+				B2494D3D25B1FC2E00327445 /* AchievementsPresenterTests.swift */,
 			);
 			path = achievement;
 			sourceTree = "<group>";
@@ -388,9 +399,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B29A16B825AFEF8B0023F222 /* Build configuration list for PBXNativeTarget "coachTests" */;
 			buildPhases = (
+				E9DFA6C86A8342C99A07A976 /* [CP] Check Pods Manifest.lock */,
 				B29A169D25AFEF8B0023F222 /* Sources */,
 				B29A169E25AFEF8B0023F222 /* Frameworks */,
 				B29A169F25AFEF8B0023F222 /* Resources */,
+				47BFF76BF3B6F8325D3C38B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -494,6 +507,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		47BFF76BF3B6F8325D3C38B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coachTests/Pods-coachTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coachTests/Pods-coachTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-coachTests/Pods-coachTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		760B9ADC506135D7592EE9A0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -509,6 +539,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-coach/Pods-coach-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9DFA6C86A8342C99A07A976 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-coachTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F20138A0E9F64C08CF041B82 /* [CP] Check Pods Manifest.lock */ = {
@@ -574,6 +626,7 @@
 				B27A57E225B1680300C3D1AD /* MockAchievementsRemoteDataManager.swift in Sources */,
 				B27A57E725B1E5C600C3D1AD /* MockAchievementsPresenter.swift in Sources */,
 				B27A57CA25B165ED00C3D1AD /* AchievementsInteractorTests.swift in Sources */,
+				B2494D3E25B1FC2E00327445 /* AchievementsPresenterTests.swift in Sources */,
 				B2494D0525B1425500327445 /* AchievementsLocalDataManagerTests.swift in Sources */,
 				B2494D2825B14BDF00327445 /* MockLocalDataFetched.swift in Sources */,
 				B26ECCC725B15367005FCD32 /* AchievementsRemoteDataManagerTests.swift in Sources */,
@@ -783,6 +836,7 @@
 		};
 		B29A16B925AFEF8B0023F222 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 577D0734F8167985E02452FB /* Pods-coachTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -805,6 +859,7 @@
 		};
 		B29A16BA25AFEF8B0023F222 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE846EBF1DC044413C085B1A /* Pods-coachTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
